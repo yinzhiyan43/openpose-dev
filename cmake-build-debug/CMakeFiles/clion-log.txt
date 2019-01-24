@@ -1,0 +1,71 @@
+/woody/software/home/clion-2018.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /woody/software/source/openpose
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- GCC detected, adding compile flags
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda (found version "8.0") 
+-- Building with CUDA.
+-- CUDA detected: 8.0
+-- Found cuDNN: ver. 5.1.10 found (include: /usr/local/cuda/include, library: /usr/local/cuda/lib64/libcudnn.so)
+-- Added CUDA NVCC flags for: sm_61
+-- Found cuDNN: ver. 5.1.10 found (include: /usr/local/cuda/include, library: /usr/local/cuda/lib64/libcudnn.so)
+-- Found GFlags: /usr/include  
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found Glog: /usr/include  
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "2.6.1") 
+-- Found OpenCV: /usr/local (found version "3.4.4") 
+-- Caffe will be downloaded from source now. NOTE: This process might take several minutes depending
+        on your internet connection.
+子模组 '3rdparty/caffe' (https://github.com/CMU-Perceptual-Computing-Lab/caffe.git) 未对路径 '../3rdparty/caffe' 注册
+正克隆到 '3rdparty/caffe'...
+子模组路径 '../3rdparty/caffe'：检出 '9453eb00f6073ab9091f8a3a973538c7bdcb6785'
+之前的 HEAD 位置是 9453eb0... Merge https://github.com/BVLC/caffe
+切换到分支 'master'
+您的分支与上游分支 'origin/master' 一致。
+-- Caffe will be built from source now.
+-- Download the models.
+-- Downloading BODY_25 model...
+-- NOTE: This process might take several minutes depending on your internet connection.
+-- Not downloading body (COCO) model
+-- Not downloading body (MPI) model
+-- Downloading face model...
+-- NOTE: This process might take several minutes depending on your internet connection.
+CMake Error at cmake/Utils.cmake:8 (file):
+  file DOWNLOAD HASH mismatch
+
+    for file: [/woody/software/source/openpose/models/face/pose_iter_116000.caffemodel]
+      expected hash: [e747180d728fa4e4418c465828384333]
+        actual hash: [a809ca4d79045638beec4a854b0ec1c8]
+             status: [56;"Failure when receiving data from the peer"]
+
+Call Stack (most recent call first):
+  CMakeLists.txt:904 (download_model)
+
+
+-- Downloading hand model...
+-- NOTE: This process might take several minutes depending on your internet connection.
+-- Models Downloaded.
+-- Configuring incomplete, errors occurred!
+See also "/woody/software/source/openpose/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/woody/software/source/openpose/cmake-build-debug/CMakeFiles/CMakeError.log".
